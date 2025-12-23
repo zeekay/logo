@@ -8,7 +8,7 @@ export const LOGO_SETTINGS: LogoSettings = {
 };
 
 // The bold geometric Z path (Geist-inspired)
-const Z_PATH = 'M 96 96 L 416 96 L 416 160 L 210 352 L 416 352 L 416 416 L 96 416 L 96 352 L 302 160 L 96 160 Z';
+const Z_PATH = 'M 96 96 H 416 V 160 L 192 352 H 416 V 416 H 96 V 352 L 320 160 H 96 Z';
 
 /**
  * Generate Z SVG logo (white Z on black background)
@@ -44,7 +44,7 @@ export function getBlackSVG(): string {
 export function getFaviconSVG(): string {
   return `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
   <rect width="32" height="32" rx="4" fill="#000000"/>
-  <path d="M 6 6 L 26 6 L 26 10 L 14 22 L 26 22 L 26 26 L 6 26 L 6 22 L 18 10 L 6 10 Z" fill="#ffffff"/>
+  <path d="M 6 6 H 26 V 10 L 12 22 H 26 V 26 H 6 V 22 L 20 10 H 6 Z" fill="#ffffff"/>
 </svg>`;
 }
 
